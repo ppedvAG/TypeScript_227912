@@ -61,10 +61,32 @@
     </pre>
     <svg width="300" height="300">
         <polygon points="22,3 14,25 5,30" style="fill:lime; stroke:purple; stroke-width: 3">
-            
+
         </polygon>
     </svg>
 
+    <p>dynamisches Polygon</p>
+    <div id="coordinates">
+        <div> coord1
+            <lable>x<input type="number" value="0" min="0" max="300"></lable>
+            <lable>y<input type="number" value="0" min="0" max="300"></lable>
+        </div>
+        <div> coord2
+            <lable>x<input type="text" value="0" min="0" max="300"></lable>
+            <lable>y<input type="text" value="0" min="0" max="300"></lable>
+        </div>
+        <div> coord3
+            <lable>x<input type="text" value="0" min="0" max="300"></lable>
+            <lable>y<input type="text" value="0" min="0" max="300"></lable>
+        </div>
+        <button id="draw">draw polygon</button>
+
+    </div>
+    <svg width="300" height="300" id="svgForPolygon"  style="border: thin solid">
+
+    </svg>
+
     <script src="/02/structures.js" defer></script>
+    <script src="uebung.js"></script>
 </body>
 </html>
