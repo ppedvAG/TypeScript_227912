@@ -34,4 +34,29 @@ console.info('\n HTML COLLECTION');
 var headings2 = document.getElementsByTagName('h2');
 console.log("heading2: ", headings2);
 var redElements = document.getElementsByClassName('red');
-console.log(redElements);
+console.log("redElements: ", redElements);
+var numberInputs = document.querySelectorAll('input[type = "number"]');
+console.log("numberInputs: ", numberInputs);
+// entries()
+// forEach()
+// item()
+// keys()
+// values()
+console.info("\n Node list of Elements to Arrays");
+// bei es5
+var nodeListEntriesES5 = Array.prototype.slice.call(numberInputs);
+// bei neueren es Versionen:
+//let nodeListEntriesES6: Array<HTMLInputElement> = Array.from((numberInputs as NodeListOf<HTMLInputElement>));
+// oder Type Assertion später bei jedem Element einzeln in einer Iteration ausführen
+// let nodeListEntriesES6: Array<Element> = Array.from(numberINputs);
+console.info('\n TUPEL');
+// Die gewünschten Datentypen vom Tupel werden INNERHALB von eckigen Klamern angegeben
+var tupel;
+// Zuweisung von Werten ist wie beim Array
+tupel = [new Date(), 'warmer Tag'];
+// Tupel können optionale Elemente beinhalten
+var tupel2;
+tupel2 = [1, 'wert für 1', true];
+tupel2 = [2, 'wert für 2'];
+// Auf Einträge kann man mit Indizes zugreifen
+console.log("tupel[1] ", tupel2[1]); // string
